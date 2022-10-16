@@ -17,6 +17,6 @@ public class ImageServiceImpl extends ServiceImpl<ImageMapper, Image> implements
     @Autowired
     private ImageMapper imageMapper;
     public List<Image> getByImageTag(String tag) {
-        return imageMapper.selectList(Wrappers.<Image>lambdaQuery().like(Image::getTag, tag));
+        return null;
     }
 }
